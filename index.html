@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css/styles.css">
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    <header>
+      <h2 data-testid="test-user-name">Kenneth Onoghwaire</h2>
+    </header>
+
+    <figure class="avatar-section">
+      <img
+        src="images/OIP (3).jpg"
+        alt="User avatar"
+        data-testid="test-user-avatar"
+      />
+    </figure>
+
+    <section class="bio-section">
+      <p data-testid="test-user-bio">
+        I'm a passionate frontend developer who loves creating clean and responsive UI experiences.
+      </p>
+      <p>
+        Current time (ms): 
+        <span data-testid="test-user-time" id="user-time"></span>
+      </p>
+    </section>
+
+    <nav aria-label="Social media">
+      <ul data-testid="test-user-social-links" class="social-links">
+        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h3>Hobbies</h3>
+      <ul data-testid="test-user-hobbies">
+        <li>Coding</li>
+        <li>Chess</li>
+        <li>Photography</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Dislikes</h3>
+      <ul data-testid="test-user-dislikes">
+        <li>Slow Wi-Fi</li>
+        <li>Messy code</li>
+        <li>Unresponsive layouts</li>
+      </ul>
+      <button class="nav-button"><a href="about-me.html"> about me</a></button>
+      <button class="nav-button"><a href="contact-us.html">contact-us</a></button>
+    </section>
+  </article>
+  <script src="index.js"></script>
+</body>
+</html>

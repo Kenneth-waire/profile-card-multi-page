@@ -1,0 +1,107 @@
+/* 🌟 Contact Page Styles */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f3f0f9;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: #1a191b;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/*  Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #3b0764;
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3b0764;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 7, 100, 0.2);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/*  Validation Messages */
+.error {
+  color: #d32f2f;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+.success {
+  color: #2e7d32;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* 🚀 Button */
+button[type="submit"] {
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #51128a;
+  transform: translateY(-2px);
+}
+
+/* 📱 Responsiveness */
+@media (max-width: 600px) {
+  .contact-container {
+    margin: 1.5rem;
+    padding: 1.2rem;
+  }
+
+  button[type="submit"] {
+    font-size: 0.95rem;
+  }
+}
